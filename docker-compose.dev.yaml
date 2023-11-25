@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  client:
+    container_name: components-kit-client
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    networks:
+      - components-kit-networks
+
+  # nginx:
+  #   container_name: components-kit-nginx
+  #   build:
+  #     context: ./nginx
+  #     dockerfile: ./Dockerfile
+  #   ports:
+  #     - '80:80'
+  #   networks:
+  #     - components-kit-networks
+
+networks:
+  components-kit-networks:
+    driver: bridge

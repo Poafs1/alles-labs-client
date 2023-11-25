@@ -1,0 +1,14 @@
+{
+  "brand": "Alles Labs",
+  "commons": {
+  },
+  "pages": {
+  },
+  "components": {
+    "head": {
+      "defaultTitle": "Alles Labs",
+      "defaultDescription": "",
+      "defaultKeywords": ""
+    }
+  }
+}
