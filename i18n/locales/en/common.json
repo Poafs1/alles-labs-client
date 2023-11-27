@@ -1,14 +1,101 @@
 {
   "brand": "Alles Labs",
   "commons": {
+    "create": "Create",
+    "update": "Update",
+    "delete": "Delete",
+    "edit": "Edit"
   },
   "pages": {
+    "home": {
+      "youDontHaveAnyProjectsYetCreateOne": "You don't have any projects yet.\nCreate one!"
+    },
+    "boardProject": {
+      "boardName": "{{name}} Board"
+    },
+    "404": {
+      "404": "404",
+      "pageNotFound": "Page not found",
+      "backToHomePage": "Back to home page"
+    }
   },
   "components": {
     "head": {
       "defaultTitle": "Alles Labs",
       "defaultDescription": "",
       "defaultKeywords": ""
+    },
+    "sidebar": {
+      "createNewProject": "Create new project"
+    }
+  },
+  "templates": {
+    "kanbanBoard": {
+      "noItems": "No items"
+    },
+    "createProjectButton": {
+      "createNewProject": "Create new project",
+      "form": {
+        "name": {
+          "label": "Project name",
+          "placeholder": "Alles Labs",
+          "required": "Project name is required",
+          "projectAlreadyExists": "Project with this name already exists"
+        }
+      }
+    },
+    "createWorkflowButton": {
+      "createNewWorkflow": "Create new workflow",
+      "form": {
+        "title": {
+          "label": "Workflow name",
+          "placeholder": "To Do",
+          "required": "Workflow name is required"
+        }
+      }
+    },
+    "updateWorkflowButton": {
+      "updateWorkflow": "Update workflow",
+      "form": {
+        "title": {
+          "label": "Workflow name",
+          "placeholder": "To Do",
+          "required": "Workflow name is required"
+        }
+      }
+    },
+    "createTaskButton": {
+      "createNewTask": "Create new task",
+      "form": {
+        "name": {
+          "label": "Task name",
+          "placeholder": "Assignment",
+          "required": "Task name is required"
+        },
+        "description": {
+          "label": "Task description",
+          "placeholder": "Write a description...",
+          "required": "Task description is required"
+        }
+      }
+    },
+    "kanbanCard": {
+      "updateTask": "Update task",
+      "open": "Open",
+      "closed": "Closed",
+      "archive": "Archive",
+      "form": {
+        "name": {
+          "label": "Task name",
+          "placeholder": "Assignment",
+          "required": "Task name is required"
+        },
+        "description": {
+          "label": "Task description",
+          "placeholder": "Write a description...",
+          "required": "Task description is required"
+        }
+      }
     }
   }
 }

@@ -6,10 +6,10 @@ export interface IConstants {
   };
   redirection: {
     home: string;
+    boardId: string;
   };
   api: {
-    auth: string;
-    user: string;
+    core: string;
   };
 }
 
@@ -21,9 +21,9 @@ export const CONSTANTS: IConstants = {
   },
   redirection: {
     home: '/',
+    boardId: '/board/[project]',
   },
   api: {
-    auth: '/auth',
-    user: '/user',
+    core: '/api/core',
   },
 };
