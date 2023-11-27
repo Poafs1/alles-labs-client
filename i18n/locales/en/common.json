@@ -3,7 +3,8 @@
   "commons": {
     "create": "Create",
     "update": "Update",
-    "delete": "Delete"
+    "delete": "Delete",
+    "edit": "Edit"
   },
   "pages": {
     "home": {
@@ -80,6 +81,8 @@
     },
     "kanbanCard": {
       "updateTask": "Update task",
+      "open": "Open",
+      "closed": "Closed",
       "archive": "Archive",
       "form": {
         "name": {

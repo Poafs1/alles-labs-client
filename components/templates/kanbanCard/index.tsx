@@ -84,7 +84,11 @@ export const KanbanCard = ({ workflow, task, callback }: IKanbanBoardProps) => {
           <div className='space-y-8'>
             <div className='space-x-1'>
               <Badge label={workflow.title} />
-              {task.archived && <Badge label='Archived' color='red' />}
+              {task.archived ? (
+                <Badge label={t('templates.kanbanCard.closed')} color='red' />
+              ) : (
+                <Badge label={t('templates.kanbanCard.open')} color='green' />
+              )}
             </div>
             <div className='space-y-4'>
               <h2 className='text-lg font-semibold'>{task.name}</h2>
@@ -92,7 +96,7 @@ export const KanbanCard = ({ workflow, task, callback }: IKanbanBoardProps) => {
               <p className='text-sm text-gray-500'>{mapDateToDDMMMMYYYY(task.createdAt)}</p>
             </div>
             <div className='flex justify-end'>
-              <Button label='Edit' appearance='tertiary' onClick={() => setEditMode(true)} />
+              <Button label={t('commons.edit')} appearance='tertiary' onClick={() => setEditMode(true)} />
             </div>
           </div>
         ) : (

@@ -55,6 +55,8 @@ export const CreateTaskButton = ({ workflow, callback }: ICreateTaskButtonProps)
     callback && callback();
 
     closeModal();
+
+    createTaskForm.resetForm();
   };
 
   return (
