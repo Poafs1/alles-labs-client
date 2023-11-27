@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
+    dangerouslyAllowSVG: true,
     domains: [
-      'avatars.dicebear.com',
+      'api.dicebear.com',
       'images.unsplash.com',
       'via.placeholder.com',
       'lh3.googleusercontent.com',
